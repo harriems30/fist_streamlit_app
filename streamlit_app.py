@@ -3,7 +3,7 @@ import pandas
 import requests
 import snowflake.connector
 
-from urllib.error immport URLError
+from urllib.error import URLError
 
 
 
@@ -54,7 +54,7 @@ streamlit.write('The user entered ', fruit_choice)
 # create table
 
 
-#streamlit.stop()
+streamlit.stop()
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
